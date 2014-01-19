@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.feedhenry.plugins.deviceorientation"
+        version="0.0.1">
+
+        <name>DeviceOrientation</name>
+
+                <description>
+                        This plugin allows you to change the app's orientation
+                </description>
+
+                <license>MIT</license>
+
+        <engines>
+                <engine name="cordova" version=">=2.8.0" />
+        </engines>
+
+
+        <js-module src="www/Orientation.js" name="DeviceOrientation">
+                <clobbers target="DeviceOrientation" />
+        </js-module>
+
+        <!-- ios -->
+        <platform name="ios">
+                <config-file target="config.xml" parent="/*">
+                        <feature name="Orientation">
+                                <param name="ios-package" value="Orientation" />
+                        </feature>
+                </config-file>
+
+                <header-file src="src/ios/Orientation.h" />
+                <source-file src="src/ios/Orientation.m" />
+        </platform>
+
+</plugin>
