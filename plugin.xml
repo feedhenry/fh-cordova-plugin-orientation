@@ -30,6 +30,8 @@
 
                 <header-file src="src/ios/Orientation.h" />
                 <source-file src="src/ios/Orientation.m" />
+
+                <framework src="Foundation.framework" weak="true" />
         </platform>
 
 </plugin>
