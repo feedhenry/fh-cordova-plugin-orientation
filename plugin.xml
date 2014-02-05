@@ -41,7 +41,7 @@
                         <param name="android-package" value="com.feedhenry.phonegap.orientation.DeviceOrientation" />
                     </feature>
                 </config-file>
-                <source-file src="src/android/DeviceOrientation.java" target-dir="com/feedhenry/phonegap/orientation" />
+                <source-file src="src/android/DeviceOrientation.java" target-dir="src/com/feedhenry/phonegap/orientation" />
         </platform>
 
 </plugin>
